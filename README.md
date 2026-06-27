@@ -1,6 +1,3 @@
-# 🤖 ML Interview Prep — Crisp Notes & Code
-
-Short, to-the-point explanations with code snippets where they actually clarify the concept. No analogies, no memory tricks — just what you'd say in an interview, plus the code to back it up.
 
 ## Table of Contents
 - [Part 1 — ML Fundamentals](#part-1--ml-fundamentals)
