@@ -43,6 +43,7 @@ X_train, X_temp, y_train, y_temp = train_test_split(X, y, test_size=0.3, random_
 X_val, X_test, y_val, y_test = train_test_split(X_temp, y_temp, test_size=0.5, random_state=42)
 # Result: 70% train, 15% val, 15% test
 ```
+random_state=42 means we ensure we get the same split everytime we run the code, temp means remaining 30% is further divided into 15% test and 15% validation
 
 ### Cross Validation (K-Fold)
 Splits data into K folds, trains K times (each fold held out once as validation), averages the results. More reliable than one train/val split, especially on small data.
