@@ -54,6 +54,27 @@ scores = cross_val_score(model, X, y, cv=5, scoring='f1')
 print(scores.mean())
 ```
 
+model → The machine learning model (e.g., Random Forest, Logistic Regression).
+X → Input features.
+y → Target/output values.
+cv=5 → Split the dataset into 5 equal parts (5 folds).
+scoring='f1' → Evaluate the model using the F1-score instead of accuracy.
+
+The model is trained 5 times:
+
+Round 1: Train on 80% → Test on Fold 1
+Round 2: Train on 80% → Test on Fold 2
+Round 3: Train on 80% → Test on Fold 3
+Round 4: Train on 80% → Test on Fold 4
+Round 5: Train on 80% → Test on Fold 5
+
+Each round gives one F1-score.
+
+Example:
+
+scores = [0.91, 0.89, 0.93, 0.90, 0.92]
+
+
 ### Cost Function
 Measures how wrong predictions are. Training = minimizing this.
 - Regression: MSE = `(1/n) * Σ(actual - predicted)²`
